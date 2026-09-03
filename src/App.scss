@@ -1,12 +1,7 @@
-$backGroundColor: #282c34;
+@reference "tailwindcss";
+
+$fontSize: calc(10px + 2vmin);
 .main-container {
-  text-align: center;
-  background-color: $backGroundColor;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  @apply flex flex-col text-center min-h-screen;
+  font-size: $fontSize;
 }
